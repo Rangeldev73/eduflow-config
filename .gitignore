@@ -1,0 +1,15 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Segredos locais que nunca devem entrar aqui de verdade,
+# mas ficam bloqueados por garantia
+*.env
+.env
+*-secrets.yml
+*-secrets.yaml
