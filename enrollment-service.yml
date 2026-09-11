@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_ENROLLMENT_URL}
+    username: ${ENROLLMENT_DB_USER}
+    password: ${ENROLLMENT_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
