@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_CERTIFICATE_URL}
+    username: ${CERTIFICATE_DB_USER}
+    password: ${CERTIFICATE_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
