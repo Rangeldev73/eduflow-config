@@ -4,3 +4,26 @@ spring:
     username: ${ENROLLMENT_DB_USER}
     password: ${ENROLLMENT_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      courseService:
+        sliding-window-size: 10
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+  retry:
+    instances:
+      courseService:
+        max-attempts: 3
+        wait-duration: 500ms
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,circuitbreakers
+  health:
+    circuitbreakers:
+      enabled: true
