@@ -38,6 +38,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka
     refresh:
       enable: false
+  instance:
+    prefer-ip-address: true
 
 platform:
-  announcement: "Teste final - Spring Cloud Bus funcionando!"
+  announcement: "Spring Cloud Bus Test!"
