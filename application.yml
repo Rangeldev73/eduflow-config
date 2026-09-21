@@ -42,4 +42,4 @@ eureka:
     prefer-ip-address: true
 
 platform:
-  announcement: "Spring Cloud Bus Test!"
+  announcement: "Spring Cloud Bus Test!!"
