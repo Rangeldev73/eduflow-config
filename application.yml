@@ -38,4 +38,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 platform:
-  announcement: "EduFlow Cloud Test!"
+  announcement: "EduFlow Cloud Announcement for Test!"
