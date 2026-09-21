@@ -23,7 +23,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,circuitbreakers
+        include: health,circuitbreakers,busrefresh
   health:
     circuitbreakers:
       enabled: true
