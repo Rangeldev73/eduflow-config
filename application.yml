@@ -36,6 +36,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+    refresh:
+      enable: false
 
 platform:
-  announcement: "EduFlow Cloud Announcement for Test!"
+  announcement: "Teste final - Spring Cloud Bus funcionando!"
