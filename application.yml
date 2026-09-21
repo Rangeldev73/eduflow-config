@@ -1,4 +1,7 @@
 spring:
+  cloud:
+    refresh:
+      extra-refreshable: none
   jpa:
     hibernate:
       ddl-auto: validate
