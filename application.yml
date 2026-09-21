@@ -35,4 +35,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 platform:
-  announcement: "Bem-vindo ao EduFlow Cloud!"
+  announcement: "Welcome to EduFlow Cloud!"
