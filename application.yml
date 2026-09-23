@@ -14,6 +14,10 @@ spring:
     locations: classpath:db/migration
   
   rabbitmq:
+    host: eduflow-rabbitmq
+    port: 5672
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
     template:
       observation-enabled: true
     listener:
@@ -30,12 +34,12 @@ management:
       probability: 1.0
     export:
       zipkin:
-        endpoint: http://localhost:9411/api/v2/spans
+        endpoint: http://eduflow-zipkin:9411/api/v2/spans
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eduflow-eureka-server:8761/eureka
     refresh:
       enable: false
   instance:
